@@ -1,6 +1,12 @@
-# handtogether
+# Handup_down
 
-A new Flutter application.
+A new Flutter project(豆腐渣工程).
+
+Let's hand Up&Down together!
+
+## References
+
+- [lizhuoyuan/flutter_study](https://github.com/lizhuoyuan/flutter_study)
 
 ## Getting Started
 
