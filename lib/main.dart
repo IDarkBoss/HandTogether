@@ -49,9 +49,9 @@ class _HomeState extends State<_Home> {
   }
 
   int _index = 0; //数组索引，通过改变索引值改变视图
-  static const ZhuyeImgUrls = [
-    'assets/icons/zhuye.png',
-    'assets/icons/zhuye-red.png',
+  static const HomePageImgUrls = [
+    'assets/icons/HomePage.png',
+    'assets/icons/HomePage-red.png',
   ];
   static const CalendarImgUrls = [
     'assets/icons/calendar.png',
@@ -61,16 +61,16 @@ class _HomeState extends State<_Home> {
     'assets/icons/chart.png',
     'assets/icons/chart-red.png',
   ];
-  static const WodeImgUrls = [
-    'assets/icons/wode.png',
-    'assets/icons/wode-red.png',
+  static const MineImgUrls = [
+    'assets/icons/Mine.png',
+    'assets/icons/Mine-red.png',
   ];
 
   var _pages;
-  String zhuye = ZhuyeImgUrls[0];
+  String home = HomePageImgUrls[0];
   String calendar = CalendarImgUrls[0];
   String chart = ChartImgUrls[0];
-  String wode = WodeImgUrls[0];
+  String mine = MineImgUrls[0];
 
   @override
   void initState() {
@@ -88,25 +88,25 @@ class _HomeState extends State<_Home> {
   @override
   Widget build(BuildContext context) {
     if (_index == 0) {
-      zhuye = ZhuyeImgUrls[1];
+      home = HomePageImgUrls[1];
       calendar = CalendarImgUrls[0];
       chart = ChartImgUrls[0];
-      wode = WodeImgUrls[0];
+      mine = MineImgUrls[0];
     } else if (_index == 1) {
-      zhuye = ZhuyeImgUrls[0];
+      home = HomePageImgUrls[0];
       calendar = CalendarImgUrls[1];
       chart = ChartImgUrls[0];
-      wode = WodeImgUrls[0];
+      mine = MineImgUrls[0];
     } else if (_index == 2) {
-      zhuye = ZhuyeImgUrls[0];
+      home = HomePageImgUrls[0];
       calendar = CalendarImgUrls[0];
       chart = ChartImgUrls[1];
-      wode = WodeImgUrls[0];
+      mine = MineImgUrls[0];
     } else if (_index == 3) {
-      zhuye = ZhuyeImgUrls[0];
+      home = HomePageImgUrls[0];
       calendar = CalendarImgUrls[0];
       chart = ChartImgUrls[0];
-      wode = WodeImgUrls[1];
+      mine = MineImgUrls[1];
     }
 
     return WillPopScope(
@@ -149,7 +149,7 @@ class _HomeState extends State<_Home> {
           SizedBox(
             width: itemWidth,
             child: IconButton(
-              icon: Image.asset(zhuye),
+              icon: Image.asset(home),
               color: Colors.white,
               onPressed: () {
                 setState(() {
@@ -186,7 +186,7 @@ class _HomeState extends State<_Home> {
           SizedBox(
             width: itemWidth,
             child: IconButton(
-              icon: Image.asset(wode),
+              icon: Image.asset(mine),
               color: Colors.white,
               onPressed: () {
                 setState(() {
